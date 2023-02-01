@@ -7,6 +7,8 @@ type cases = [
   MyPick<Todo, 'title' | 'completed' | 'invalid'>,
 ]
 
+type Test = MyPick<Todo, 'title' | 'completed'>
+
 interface Todo {
   title: string
   description: string
