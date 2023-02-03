@@ -14,5 +14,7 @@ type cases = [
   Expect<Equal<MyAwaited<T>, number>>,
 ]
 
+type test = MyAwaited<Z>
+
 // @ts-expect-error
 type error = MyAwaited<number>
